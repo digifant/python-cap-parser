@@ -762,6 +762,9 @@ class Area(object):
             raise Exception("Circle must be a string")
         self.circle[0].remove(circle)
 
+    def getGeoCode(self):
+        return self.geocode[0]
+    
     def addGeocode(self, geocodeName, geocodeValue):
         '''Add a geocode to the area. These must be strings.'''
         if not isinstance(geocodeName, str):
@@ -812,6 +815,12 @@ class Geocode(object):
         if not isinstance(geocodeValue, str):
             raise Exception("GeocodeValue must be a string")
         self.geocodeValue = (geocodeValue, 1)
+
+    def getGeocodeName(self):
+        return self.geocodeName[0]
+
+    def getGeocodeValue(self):
+        return self.geocodeValue[0]
 
     def __str__(self):
         return "geocode"
