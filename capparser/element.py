@@ -575,28 +575,28 @@ class EventCode(object):
         if not isinstance(eventValue, str) and eventValue != None:
             raise Exception("EventValue must be a string")
             
-        self.eventName = (eventName, 0)
-        self.eventValue = (eventValue, 1)
+        self.valueName = (eventName, 0)
+        self.value = (eventValue, 1)
 
     def setEventName(self, eventName):
         '''Set the eventName of the eventCode. Must be a string.'''
         if not isinstance(eventName, str):
             raise Exception("EventName must be a string")
-        self.eventName = (eventName, 0)
+        self.valueName = (eventName, 0)
 
     def getEventName(self):
         '''Get the eventName of the eventCode.'''
-        return self.eventName[0]
+        return self.valueName[0]
 
     def setEventValue(self, eventValue):
         '''Set the eventValue of the eventCode. Must be a string.'''
         if not isinstance(eventValue, str):
             raise Exception("EventValue must be a string")
-        self.eventValue = (eventValue, 1)
+        self.value = (eventValue, 1)
 
     def getEventValue(self):
         '''Get the eventValue of the eventCode.'''
-        return self.eventValue[0]
+        return self.value[0]
 
     def __str__(self):
         return "eventCode"
@@ -611,28 +611,28 @@ class Parameter(object):
         if not isinstance(parameterValue, str) and parameterValue != None:
             raise Exception("ParameterValue must be a string")
             
-        self.parameterName = (parameterName, 0)
-        self.parameterValue = (parameterValue, 1)
+        self.valueName = (parameterName, 0)
+        self.value = (parameterValue, 1)
 
     def setParameterName(self, parameterName):
         '''Set the parameterName of the parameter. Must be a string.'''
         if not isinstance(parameterName, str):
             raise Exception("ParameterName must be a string")
-        self.parameterName = (parameterName, 0)
+        self.valueName = (parameterName, 0)
 
     def getParameterName(self):
         '''Get the parameterName of the parameter.'''
-        return self.parameterName[0]
+        return self.valueName[0]
 
     def setParameterValue(self, parameterValue):
         '''Set the parameterValue of the parameter. Must be a string.'''
         if not isinstance(parameterValue, str):
             raise Exception("ParameterValue must be a string")
-        self.parameterValue = (parameterValue, 1)
+        self.value = (parameterValue, 1)
 
     def getParameterValue(self):
         '''Get the parameterValue of the parameter.'''
-        return self.parameterValue[0]
+        return self.value[0]
 
     def __str__(self):
         return "parameter"
