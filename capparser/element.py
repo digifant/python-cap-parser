@@ -762,7 +762,7 @@ class Area(object):
             raise Exception("Circle must be a string")
         self.circle[0].remove(circle)
 
-    def getGeoCode(self):
+    def getGeocode(self):
         return self.geocode[0]
     
     def addGeocode(self, geocodeName, geocodeValue):
