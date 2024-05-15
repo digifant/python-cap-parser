@@ -611,8 +611,8 @@ class Parameter(object):
         if not isinstance(parameterValue, str) and parameterValue != None:
             raise Exception("ParameterValue must be a string")
             
-        self.valueName = (parameterName, 0)
-        self.value = (parameterValue, 1)
+        self.parameterName = (parameterName, 0)
+        self.parameterValue = (parameterValue, 1)
 
     def setParameterName(self, parameterName):
         '''Set the parameterName of the parameter. Must be a string.'''
