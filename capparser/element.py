@@ -575,8 +575,8 @@ class EventCode(object):
         if not isinstance(eventValue, str) and eventValue != None:
             raise Exception("EventValue must be a string")
             
-        self.valueName = (eventName, 0)
-        self.value = (eventValue, 1)
+        self.eventName = (eventName, 0)
+        self.eventValue = (eventValue, 1)
 
     def setEventName(self, eventName):
         '''Set the eventName of the eventCode. Must be a string.'''
