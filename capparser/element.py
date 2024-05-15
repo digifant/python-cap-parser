@@ -798,8 +798,8 @@ class Geocode(object):
             raise Exception("GeocodeName must be a string")
         if not isinstance(geocodeValue, str) and geocodeValue != None:
             raise Exception("GeocodeValue must be a string")
-        self.valueName = (geocodeName, 0)
-        self.value = (geocodeValue, 1)
+        self.geocodeName = (geocodeName, 0)
+        self.geocodeValue = (geocodeValue, 1)
 
     def setGeocodeName(self, geocodeName):
         '''Set the geocodeName of the geocode. Must be a string.'''
